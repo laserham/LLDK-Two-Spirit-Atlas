@@ -1,0 +1,29 @@
+uuid: 8d5ff0da-a37a-4e66-980d-9796cbb3dcea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_school
+    - node.type.non_school_based_memory
+    - node.type.school
+id: node.non_school_based_memory.field_school
+field_name: field_school
+entity_type: node
+bundle: non_school_based_memory
+label: 'Story Episode Setting'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      school: school
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

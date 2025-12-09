@@ -1,0 +1,19 @@
+uuid: 1dc3d44a-753a-4d4d-a40a-16adce425c59
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_record_references
+field_name: field_record_references
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

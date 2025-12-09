@@ -1,0 +1,9 @@
+uuid: a68ef4b3-413a-4e50-b293-a93362317f4f
+langcode: en
+status: true
+dependencies: {  }
+name: 'Location Type'
+vid: memory_type
+description: 'Select a term that best describes the location the memory is related to'
+weight: 0
+new_revision: false

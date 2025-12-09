@@ -1,0 +1,23 @@
+uuid: fc0bc3a9-c956-428c-8a8e-7780dba5fa60
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_setting_related_details
+    - node.type.school
+  module:
+    - text
+id: node.school.field_setting_related_details
+field_name: field_setting_related_details
+entity_type: node
+bundle: school
+label: 'Setting Related Details'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

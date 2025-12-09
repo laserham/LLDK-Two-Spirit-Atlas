@@ -1,0 +1,63 @@
+uuid: 3b405a95-dd85-4b51-9c60-e05f4446ddf4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.survivor.body
+    - field.field.node.survivor.field_audio
+    - field.field.node.survivor.field_audio_clip_start_and_end_t
+    - field.field.node.survivor.field_episode_number
+    - field.field.node.survivor.field_grouped_narrative_area
+    - field.field.node.survivor.field_photos
+    - field.field.node.survivor.field_record_references
+    - field.field.node.survivor.field_school
+    - image.style.thumbnail
+    - node.type.survivor
+  module:
+    - image
+    - text
+    - user
+id: node.survivor.teaser
+targetEntityType: node
+bundle: survivor
+mode: teaser
+content:
+  body:
+    type: text_trimmed
+    label: hidden
+    settings:
+      trim_length: 200
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_photos:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_school:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_audio: true
+  field_audio_clip_start_and_end_t: true
+  field_episode_number: true
+  field_grouped_narrative_area: true
+  field_record_references: true

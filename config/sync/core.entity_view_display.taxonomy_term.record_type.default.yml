@@ -1,0 +1,21 @@
+uuid: ef5f501f-a47f-4130-b422-6dba0aa82fa4
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.record_type
+  module:
+    - text
+id: taxonomy_term.record_type.default
+targetEntityType: taxonomy_term
+bundle: record_type
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

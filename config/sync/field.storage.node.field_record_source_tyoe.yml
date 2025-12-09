@@ -1,0 +1,20 @@
+uuid: f938f803-bec6-43cd-bd15-b50cc63a946a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_record_source_tyoe
+field_name: field_record_source_tyoe
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

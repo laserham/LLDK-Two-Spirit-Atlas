@@ -1,0 +1,29 @@
+uuid: 45362cf4-a2a3-4c50-99b7-5b273a933814
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_school
+    - node.type.school
+    - node.type.survivor
+id: node.survivor.field_school
+field_name: field_school
+entity_type: node
+bundle: survivor
+label: 'Story Episode Setting'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      school: school
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

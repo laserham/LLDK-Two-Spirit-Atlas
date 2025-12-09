@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
+langcode: en
+uuid: 820a364b-8671-4f51-a1ea-bdfda16d089b
+name: 'Theodore Fontaine Story Map Site'
+mail: meme.notification@gbrauen.ca
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/1
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+mail_notification: meme.notification@gbrauen.ca

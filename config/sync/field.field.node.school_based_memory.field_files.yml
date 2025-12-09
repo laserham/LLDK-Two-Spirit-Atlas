@@ -1,0 +1,27 @@
+uuid: 215c4c97-9c9b-4b13-aa94-788d9c82dfa0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_files
+    - node.type.school_based_memory
+  module:
+    - file
+id: node.school_based_memory.field_files
+field_name: field_files
+entity_type: node
+bundle: school_based_memory
+label: File(s)
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf'
+  max_filesize: '20 MB'
+  description_field: true
+field_type: file

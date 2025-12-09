@@ -1,0 +1,29 @@
+.leaflet-control-scale-line {
+    background: rgba(255,255,255,1.0);
+}
+.leaflet-fade-anim .leaflet-tile,.leaflet-zoom-anim .leaflet-zoom-animated {
+    will-change:auto !important;
+}
+.leaflet-tooltip-pane {
+  z-index: 710;
+}
+.leaflet-legend-title {
+  font-weight: bold;
+}
+/* 
+ * marker clustering updates - clusters distinguished by predominance of
+ * school or record memory points inside the cluster.
+ */
+.marker-cluster-story-episode-chapter {
+  background-color: rgb(237, 221, 0, 0.55);
+}
+.marker-cluster-story-episode-chapter div {
+  background-color: rgb(237, 162, 0, 0.6);
+}
+
+.marker-cluster-record {
+  background-color: rgb(0, 181, 32, 0.55)
+}
+.marker-cluster-record div {
+  background-color: rgb(0, 181, 77, 0.6);
+}

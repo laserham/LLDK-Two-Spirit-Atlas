@@ -1,0 +1,18 @@
+uuid: c831cf7e-566c-4f1a-a8d3-2ca90cb21f6e
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Story Episode - Book Chapter'
+type: school_based_memory
+description: 'Each part of the story linked to a particular location is referred to as a story episode. This content type includes excerpts from the book chapter and related media.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

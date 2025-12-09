@@ -1,0 +1,29 @@
+uuid: 0d9d86c5-96dd-4b90-8e1b-925e717117dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_record_source_tyoe
+    - node.type.non_school_based_memory
+    - taxonomy.vocabulary.record_source_type
+id: node.non_school_based_memory.field_record_source_tyoe
+field_name: field_record_source_tyoe
+entity_type: node
+bundle: non_school_based_memory
+label: 'Record Source Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      record_source_type: record_source_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

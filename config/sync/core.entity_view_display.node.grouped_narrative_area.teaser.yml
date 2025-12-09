@@ -1,0 +1,24 @@
+uuid: f6bff95a-1385-44a0-8e41-e2ca3b6b8401
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.grouped_narrative_area.field_extent_reference
+    - field.field.node.grouped_narrative_area.field_location
+    - node.type.grouped_narrative_area
+  module:
+    - user
+id: node.grouped_narrative_area.teaser
+targetEntityType: node
+bundle: grouped_narrative_area
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_extent_reference: true
+  field_location: true

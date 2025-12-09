@@ -1,0 +1,26 @@
+uuid: 9003fa96-23ae-4e94-a2af-d98053868697
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_video
+    - node.type.non_school_based_memory
+  module:
+    - video
+id: node.non_school_based_memory.field_video
+field_name: field_video
+entity_type: node
+bundle: non_school_based_memory
+label: Video(s)
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: 'videos/[date:custom:Y]-[date:custom:m]'
+  file_extensions: ''
+  max_filesize: ''
+field_type: video

@@ -1,0 +1,23 @@
+uuid: 36c17949-3e76-4118-aff3-371cc2853d4c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.survivor
+  module:
+    - text
+id: node.survivor.body
+field_name: body
+entity_type: node
+bundle: survivor
+label: 'Transcript Section'
+description: 'Each transcript section corresponds to a unique segment of the story journey.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

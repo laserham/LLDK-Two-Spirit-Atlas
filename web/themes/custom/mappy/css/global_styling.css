@@ -1,0 +1,47 @@
+.region-secondary-menu {
+    float: right;
+}
+.site-branding__logo img {
+    height: 64px;
+}
+.field {
+  clear: left;
+}
+.field--type-entity-reference {
+    margin: 0;
+    font-family: Georgia,"Times New Roman",Times,serif;
+}
+.field--type-entity-reference .field__label {
+    font-weight: bold;
+    font-size: inherit;
+}
+.field__items .field__item {
+    float: left;
+    margin-right: 0.75em;
+}
+.site-branding__logo img {
+    height: 64px;
+    width: 64px;
+}
+header.node__referenced_records_photos {
+    display: none;
+}
+span.node__referenced_records_photos {
+    clear: left;
+    float:left;
+}
+.node__referenced_records_photos img {
+    margin: 0;
+}
+/* @media (min-width: 62.5rem) { */
+@media {
+    .text-content blockquote, .cke_editable blockquote {
+        font-size: 2.5rem;
+        line-height: 3.9375rem;
+        font-size: 1.2rem;
+        line-height: 2.25rem;
+    }
+}
+.comments__title {
+    clear: left;
+}

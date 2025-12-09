@@ -1,0 +1,18 @@
+uuid: 3a3f31f8-3811-4b53-8eda-63b28a702088
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Grouped Narrative Area'
+type: grouped_narrative_area
+description: "A grouped narrative area is a geographic delimitation of a useful area for displaying elements of interest for part of a geographic narrative. However defined, a grouped narrative area is intended to frame a map around one or more narrative elements within a story. As a set, grouped narrative areas can be used to (re)frame all parts of a geographic narrative.\r\n\r\nIn this implementation, a group is defined as the minimum bounding box that encloses the story elements related to all narrative items to which the group is linked. The narrative items are story transcripts that, in turn, are linked from book chapters and records in the database.\r\n\r\nEach narrative item (transcript) is linked to zero or one group. If the transcript links to one group, that group is used to define the default geographic extent in which the items related to that transcript are displayed. If the transcript is not linked to a group, the minimum bounding box of the chapters and records related to that transcript is the default frame for all items related to that transcript. A user may adjust the interactive frame as they wish.\r\n\r\nOne or more grouped narrative areas may link to a transcript even if that transcript links to another group or no group for its own display. This allows the geographic areas related to that transcript to assist in defining the default framing of narrative items independent of how that transcript is (by default) framed.\r\n"
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

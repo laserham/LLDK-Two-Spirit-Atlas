@@ -1,0 +1,29 @@
+uuid: 7073a179-b128-44bf-82f1-e99beef6c2ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_record_references
+    - node.type.non_school_based_memory
+    - node.type.school_based_memory
+id: node.school_based_memory.field_record_references
+field_name: field_record_references
+entity_type: node
+bundle: school_based_memory
+label: 'Related Records'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      non_school_based_memory: non_school_based_memory
+    sort:
+      field: field_record_publication_date
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,29 @@
+uuid: 1d00a8b8-6456-480d-8c3d-4e788f4f96de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_grouped_narrative_area
+    - node.type.grouped_narrative_area
+    - node.type.survivor
+id: node.survivor.field_grouped_narrative_area
+field_name: field_grouped_narrative_area
+entity_type: node
+bundle: survivor
+label: 'Grouped Narrative Area'
+description: 'This is an optional link to a grouped narrative area defining a broader geographic extent as the default map extent when displaying the narrative items related to this transcript. This is an optional field. If not defined, the geographic extent of narrative items related to the transcript item will be used as the map extent.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      grouped_narrative_area: grouped_narrative_area
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

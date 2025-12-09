@@ -1,0 +1,18 @@
+uuid: cf9c0cc8-3b89-48c1-8083-636d2b3cef8c
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Story Episode - Transcript'
+type: survivor
+description: 'Each part of the story linked to a particular location is referred to as a story episode. This content type includes excerpts from the original transcription and related media.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

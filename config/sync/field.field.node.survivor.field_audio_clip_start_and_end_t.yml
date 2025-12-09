@@ -1,0 +1,19 @@
+uuid: 03960620-e1cf-4e51-8ea8-4fb96b649762
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_audio_clip_start_and_end_t
+    - node.type.survivor
+id: node.survivor.field_audio_clip_start_and_end_t
+field_name: field_audio_clip_start_and_end_t
+entity_type: node
+bundle: survivor
+label: 'Audio Clip Start and End Times'
+description: 'e.g. 00:00 - 2:31:31 minutes'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,29 @@
+uuid: 1d60f64f-0fb7-4650-9bda-ea1d31db7e9c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_survivor
+    - node.type.school_based_memory
+    - node.type.survivor
+id: node.school_based_memory.field_survivor
+field_name: field_survivor
+entity_type: node
+bundle: school_based_memory
+label: Transcript
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      survivor: survivor
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

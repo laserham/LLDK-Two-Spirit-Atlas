@@ -1,0 +1,70 @@
+uuid: 707a6f68-17a7-4b7a-a6e3-ae678fac0f21
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+    - node.type.about_contributor
+    - node.type.article
+    - node.type.non_school_based_memory
+    - node.type.page
+    - node.type.school_based_memory
+  module:
+    - comment
+    - contact
+    - file
+    - filter
+    - node
+    - publishcontent
+    - search
+    - shortcut
+    - system
+_core:
+  default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
+id: authenticated
+label: Student
+weight: -9
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access content overview'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'change own username'
+  - 'create about_contributor content'
+  - 'create non_school_based_memory content'
+  - 'create school_based_memory content'
+  - 'delete about_contributor revisions'
+  - 'delete non_school_based_memory revisions'
+  - 'delete own about_contributor content'
+  - 'delete own files'
+  - 'delete own non_school_based_memory content'
+  - 'delete own school_based_memory content'
+  - 'delete school_based_memory revisions'
+  - 'edit own about_contributor content'
+  - 'edit own article content'
+  - 'edit own non_school_based_memory content'
+  - 'edit own page content'
+  - 'edit own school_based_memory content'
+  - 'post comments'
+  - 'publish editable node type about_contributor'
+  - 'publish editable node type non_school_based_memory'
+  - 'publish editable node type school_based_memory'
+  - 'publish own node type about_contributor'
+  - 'revert about_contributor revisions'
+  - 'revert non_school_based_memory revisions'
+  - 'revert school_based_memory revisions'
+  - 'search content'
+  - 'skip comment approval'
+  - 'unpublish editable node type about_contributor'
+  - 'unpublish editable node type non_school_based_memory'
+  - 'unpublish editable node type school_based_memory'
+  - 'unpublish own node type about_contributor'
+  - 'unpublish own node type non_school_based_memory'
+  - 'unpublish own node type school_based_memory'
+  - 'use text format basic_html'
+  - 'view about_contributor revisions'
+  - 'view non_school_based_memory revisions'
+  - 'view own unpublished content'
+  - 'view school_based_memory revisions'

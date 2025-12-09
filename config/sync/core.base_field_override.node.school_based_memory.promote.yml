@@ -1,0 +1,22 @@
+uuid: c50ab489-d3ea-4c64-a7f2-f0230605c9ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.school_based_memory
+id: node.school_based_memory.promote
+field_name: promote
+entity_type: node
+bundle: school_based_memory
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

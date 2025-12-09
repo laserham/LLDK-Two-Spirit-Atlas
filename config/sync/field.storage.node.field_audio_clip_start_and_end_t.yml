@@ -1,0 +1,21 @@
+uuid: a5388e13-9716-4b81-a7e7-c856615cd765
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_audio_clip_start_and_end_t
+field_name: field_audio_clip_start_and_end_t
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,167 @@
+uuid: 3a2cab7f-37a6-4b6b-889d-16efadcbf2bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.school_based_memory.body
+    - field.field.node.school_based_memory.comment
+    - field.field.node.school_based_memory.field_audio
+    - field.field.node.school_based_memory.field_files
+    - field.field.node.school_based_memory.field_photos
+    - field.field.node.school_based_memory.field_record_references
+    - field.field.node.school_based_memory.field_rel_transcript_portion
+    - field.field.node.school_based_memory.field_school
+    - field.field.node.school_based_memory.field_summary_keywords
+    - field.field.node.school_based_memory.field_survivor
+    - field.field.node.school_based_memory.field_video
+    - image.style.medium
+    - node.type.school_based_memory
+  module:
+    - comment
+    - file
+    - image
+    - path
+    - text
+    - video
+id: node.school_based_memory.default
+targetEntityType: node
+bundle: school_based_memory
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 8
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  comment:
+    type: comment_default
+    weight: 15
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_audio:
+    type: file_generic
+    weight: 12
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_files:
+    type: file_generic
+    weight: 9
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_photos:
+    type: image_image
+    weight: 10
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: medium
+    third_party_settings: {  }
+  field_record_references:
+    type: entity_reference_autocomplete
+    weight: 13
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_rel_transcript_portion:
+    type: string_textfield
+    weight: 7
+    region: content
+    settings:
+      size: 100
+      placeholder: 'Describe portion of transcript relevant to this memory'
+    third_party_settings: {  }
+  field_school:
+    type: entity_reference_autocomplete
+    weight: 6
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_summary_keywords:
+    type: entity_reference_autocomplete
+    weight: 14
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_survivor:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_video:
+    type: video_upload
+    weight: 11
+    region: content
+    settings:
+      progress_indicator: throbber
+      file_directory: 'video-thumbnails/[date:custom:Y]-[date:custom:m]'
+      file_extensions: 'mp4 webm'
+      max_filesize: 200MB
+      uri_scheme: private
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 120
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  promote: true
+  sticky: true

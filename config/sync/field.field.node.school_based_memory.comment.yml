@@ -1,0 +1,33 @@
+uuid: 9cbe0b15-733a-4ece-a329-4a89fa082977
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.comment
+    - node.type.school_based_memory
+  module:
+    - comment
+id: node.school_based_memory.comment
+field_name: comment
+entity_type: node
+bundle: school_based_memory
+label: Comments
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    status: 2
+    cid: 0
+    last_comment_timestamp: 0
+    last_comment_name: null
+    last_comment_uid: 0
+    comment_count: 0
+default_value_callback: ''
+settings:
+  default_mode: 1
+  per_page: 50
+  anonymous: 0
+  form_location: true
+  preview: 1
+field_type: comment

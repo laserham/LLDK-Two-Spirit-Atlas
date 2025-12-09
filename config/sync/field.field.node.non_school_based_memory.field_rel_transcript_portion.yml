@@ -1,0 +1,19 @@
+uuid: d1a36b6e-21ff-410b-a77e-da90609147b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rel_transcript_portion
+    - node.type.non_school_based_memory
+id: node.non_school_based_memory.field_rel_transcript_portion
+field_name: field_rel_transcript_portion
+entity_type: node
+bundle: non_school_based_memory
+label: 'Other Record Type'
+description: 'Describe record type here'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

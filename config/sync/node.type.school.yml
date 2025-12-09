@@ -1,0 +1,18 @@
+uuid: a9786505-7d91-44e3-972e-55c6b9d486aa
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Story Episode Setting'
+type: school
+description: 'Information about location of episode.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

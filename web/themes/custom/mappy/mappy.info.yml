@@ -1,0 +1,25 @@
+# mappy.info.yml
+---
+name: Mappy (based on Olivero)
+version: 0.0.2
+type: theme
+description: 'D10-compatible theme adding leaflet map block and scripts.'
+core_version_requirement: ^8 || ^9 || ^10
+base theme: olivero
+logo: openclipartorg_download_58669_tooltip_modified.svg
+regions:
+  header: Header
+  primary_menu: Primary menu
+  secondary_menu: Secondary menu
+  hero: Hero (full width)
+  highlighted: Highlighted
+  breadcrumb: Breadcrumb
+  social: Social Bar
+  content_above: Content Above
+  content: Content
+  sidebar: Sidebar
+  content_below: Content Below
+  footer_top: Footer Top
+  footer_bottom: Footer Bottom
+libraries:
+  - mappy/global-styling

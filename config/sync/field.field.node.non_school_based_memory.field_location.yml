@@ -1,0 +1,21 @@
+uuid: 69114387-4afe-48b0-8d48-12a62d3ca375
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location
+    - node.type.non_school_based_memory
+  module:
+    - geofield
+id: node.non_school_based_memory.field_location
+field_name: field_location
+entity_type: node
+bundle: non_school_based_memory
+label: Location
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geofield

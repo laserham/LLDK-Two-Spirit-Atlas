@@ -1,0 +1,22 @@
+uuid: 7c70618a-024b-427e-b68f-081aa8f6050a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location
+    - node.type.school
+  module:
+    - geofield
+id: node.school.field_location
+field_name: field_location
+entity_type: node
+bundle: school
+label: Location
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  backend: geofield_backend_default
+field_type: geofield

@@ -1,0 +1,19 @@
+uuid: f2547825-d3e8-49d1-b629-a65438b4814a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rel_transcript_portion
+    - node.type.school_based_memory
+id: node.school_based_memory.field_rel_transcript_portion
+field_name: field_rel_transcript_portion
+entity_type: node
+bundle: school_based_memory
+label: 'Page Reference'
+description: 'Reference information for book citation'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

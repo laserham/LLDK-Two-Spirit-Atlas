@@ -1,0 +1,127 @@
+uuid: 9ef94764-1434-4ce5-9440-171aff18ba96
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.survivor.body
+    - field.field.node.survivor.field_audio
+    - field.field.node.survivor.field_audio_clip_start_and_end_t
+    - field.field.node.survivor.field_episode_number
+    - field.field.node.survivor.field_grouped_narrative_area
+    - field.field.node.survivor.field_photos
+    - field.field.node.survivor.field_record_references
+    - field.field.node.survivor.field_school
+    - image.style.large
+    - node.type.survivor
+  module:
+    - audiofield
+    - colorbox
+    - text
+    - user
+id: node.survivor.default
+targetEntityType: node
+bundle: survivor
+mode: default
+content:
+  body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_audio:
+    type: audiofield_audioplayer
+    label: hidden
+    settings:
+      audio_player: default_mp3_player
+      audio_player_jplayer_theme: none
+      audio_player_wavesurfer_combine_files: false
+      audio_player_wavesurfer_audiorate: 1
+      audio_player_wavesurfer_autocenter: true
+      audio_player_wavesurfer_bargap: 0
+      audio_player_wavesurfer_barheight: 1
+      audio_player_wavesurfer_barwidth: null
+      audio_player_wavesurfer_cursorcolor: '#333'
+      audio_player_wavesurfer_cursorwidth: 1
+      audio_player_wavesurfer_forcedecode: false
+      audio_player_wavesurfer_normalize: false
+      audio_player_wavesurfer_playnexttrack: true
+      audio_player_wavesurfer_progresscolor: '#555'
+      audio_player_wavesurfer_responsive: false
+      audio_player_wavesurfer_use_peakfile: false
+      audio_player_wavesurfer_wavecolor: '#999'
+      audio_player_wordpress_combine_files: false
+      audio_player_wordpress_animation: true
+      audio_player_soundmanager_theme: default
+      audio_player_initial_volume: 8
+      audio_player_autoplay: false
+      audio_player_lazyload: false
+      download_button: false
+      download_link: false
+      audio_player_wavesurfer_backend: WebAudio
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_audio_clip_start_and_end_t:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_episode_number:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_grouped_narrative_area:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_photos:
+    type: colorbox
+    label: hidden
+    settings:
+      colorbox_node_style: large
+      colorbox_node_style_first: ''
+      colorbox_image_style: ''
+      colorbox_gallery: page
+      colorbox_gallery_custom: ''
+      colorbox_caption: auto
+      colorbox_caption_custom: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_record_references:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: photos
+      link: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_school:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

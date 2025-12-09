@@ -1,0 +1,30 @@
+uuid: 528e7bf8-320c-45eb-a2be-d9287f641cf7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.grouped_narrative_area.field_extent_reference
+    - field.field.node.grouped_narrative_area.field_location
+    - node.type.grouped_narrative_area
+  module:
+    - user
+id: node.grouped_narrative_area.default
+targetEntityType: node
+bundle: grouped_narrative_area
+mode: default
+content:
+  field_extent_reference:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_location: true

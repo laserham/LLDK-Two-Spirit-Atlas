@@ -1,0 +1,19 @@
+uuid: 46f3f37d-3c3f-4572-9be1-488eb8ed1c40
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_source_name
+    - node.type.non_school_based_memory
+id: node.non_school_based_memory.field_source_name
+field_name: field_source_name
+entity_type: node
+bundle: non_school_based_memory
+label: 'Record Source Name'
+description: 'List the name of the source here.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

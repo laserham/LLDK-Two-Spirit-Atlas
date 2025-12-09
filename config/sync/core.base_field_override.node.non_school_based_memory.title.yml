@@ -1,0 +1,18 @@
+uuid: fa8bbf44-cb05-45d4-a4a9-c1cf57461ea0
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.non_school_based_memory
+id: node.non_school_based_memory.title
+field_name: title
+entity_type: node
+bundle: non_school_based_memory
+label: Caption
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

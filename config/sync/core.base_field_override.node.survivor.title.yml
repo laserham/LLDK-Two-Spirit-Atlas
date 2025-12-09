@@ -1,0 +1,18 @@
+uuid: f2cfd047-e28b-491b-8b60-4341f2cb2dea
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.survivor
+id: node.survivor.title
+field_name: title
+entity_type: node
+bundle: survivor
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

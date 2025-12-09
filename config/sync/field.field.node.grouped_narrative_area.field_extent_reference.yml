@@ -1,0 +1,29 @@
+uuid: 96ab1a9b-90b7-4f64-9c0a-45d0dad884ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_extent_reference
+    - node.type.grouped_narrative_area
+    - node.type.survivor
+id: node.grouped_narrative_area.field_extent_reference
+field_name: field_extent_reference
+entity_type: node
+bundle: grouped_narrative_area
+label: 'Extent reference'
+description: 'This field references a number of narrative extent items that define a map extent to be used when displaying some narrative content items on the map. Note that there is no necessary link between a narrative item being used as part of the definition of a geographic extent and that extent being used to display that narrative item. See the content type discussion of how this implementation links narrative items (content related to a transcript) to zero or one grouped narrative area for display purpose.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      survivor: survivor
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

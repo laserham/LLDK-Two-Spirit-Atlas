@@ -1,0 +1,40 @@
+uuid: f53c0a80-cec1-44a7-a187-9cc6575eb7c2
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5769527f-40ab-4bff-bf8f-ef6f45491b3f'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - mappy
+id: mapblock2
+theme: mappy
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:5769527f-40ab-4bff-bf8f-ef6f45491b3f'
+settings:
+  id: 'block_content:5769527f-40ab-4bff-bf8f-ef6f45491b3f'
+  label: 'Memories prepared by me'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/user/*'
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated
+      instructor: instructor
+      administrator: administrator

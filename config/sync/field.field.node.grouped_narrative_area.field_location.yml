@@ -1,0 +1,21 @@
+uuid: b48f40ea-fe48-4535-b155-b3efe692a41f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location
+    - node.type.grouped_narrative_area
+  module:
+    - geofield
+id: node.grouped_narrative_area.field_location
+field_name: field_location
+entity_type: node
+bundle: grouped_narrative_area
+label: Location
+description: 'This is added so that an empty wktExtent field can be added to the groupedNarrativeArea view'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geofield

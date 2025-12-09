@@ -1,0 +1,13 @@
+uuid: 1452b343-55eb-410e-ae11-3cafe297d573
+langcode: en
+status: true
+dependencies:
+  module:
+    - change_author_action
+_core:
+  default_config_hash: 8j6EF2n0Mq9ff-a0yodNM81zC9VmwRuotHSie8SnkKs
+id: change_author_action
+label: 'Change author'
+type: node
+plugin: change_author_action_base
+configuration: {  }

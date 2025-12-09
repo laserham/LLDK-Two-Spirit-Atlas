@@ -1,0 +1,19 @@
+uuid: 8778b0b2-17cb-4c5b-bd4f-034997115e4b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_other_record_source_type
+    - node.type.non_school_based_memory
+id: node.non_school_based_memory.field_other_record_source_type
+field_name: field_other_record_source_type
+entity_type: node
+bundle: non_school_based_memory
+label: 'Other Record Source Type'
+description: 'Describe the source type here'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

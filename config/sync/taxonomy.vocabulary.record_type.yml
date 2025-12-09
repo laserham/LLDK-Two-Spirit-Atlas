@@ -1,0 +1,9 @@
+uuid: d8686234-91bb-4b4f-8fcb-8ccc085584d7
+langcode: en
+status: true
+dependencies: {  }
+name: 'Record Type'
+vid: record_type
+description: 'Format of record (audio, video, image, text etc)'
+weight: 0
+new_revision: false

@@ -1,0 +1,29 @@
+uuid: 65fc9d89-79cc-446c-b8f0-bf6228ebdba2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_record_references
+    - node.type.non_school_based_memory
+    - node.type.survivor
+id: node.survivor.field_record_references
+field_name: field_record_references
+entity_type: node
+bundle: survivor
+label: 'Related Records'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      non_school_based_memory: non_school_based_memory
+    sort:
+      field: field_record_publication_date
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

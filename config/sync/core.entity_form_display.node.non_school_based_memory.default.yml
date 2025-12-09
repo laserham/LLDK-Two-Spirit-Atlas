@@ -1,0 +1,275 @@
+uuid: c6883ecb-2a31-4334-bcdf-4a3523019ed8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.non_school_based_memory.body
+    - field.field.node.non_school_based_memory.comment
+    - field.field.node.non_school_based_memory.field_audio
+    - field.field.node.non_school_based_memory.field_files
+    - field.field.node.non_school_based_memory.field_location
+    - field.field.node.non_school_based_memory.field_other_record_source_type
+    - field.field.node.non_school_based_memory.field_photos
+    - field.field.node.non_school_based_memory.field_record_publication_date
+    - field.field.node.non_school_based_memory.field_record_source_tyoe
+    - field.field.node.non_school_based_memory.field_record_type
+    - field.field.node.non_school_based_memory.field_rel_transcript_portion
+    - field.field.node.non_school_based_memory.field_rel_video_segment
+    - field.field.node.non_school_based_memory.field_school
+    - field.field.node.non_school_based_memory.field_source_name
+    - field.field.node.non_school_based_memory.field_summary_keywords
+    - field.field.node.non_school_based_memory.field_survivor
+    - field.field.node.non_school_based_memory.field_video
+    - image.style.thumbnail
+    - node.type.non_school_based_memory
+  module:
+    - comment
+    - datetime
+    - file
+    - image
+    - leaflet
+    - path
+    - text
+    - video
+id: node.non_school_based_memory.default
+targetEntityType: node
+bundle: non_school_based_memory
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 1
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  comment:
+    type: comment_default
+    weight: 18
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_audio:
+    type: file_generic
+    weight: 17
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_files:
+    type: file_generic
+    weight: 14
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_location:
+    type: leaflet_widget_default
+    weight: 26
+    region: content
+    settings:
+      map:
+        leaflet_map: 'OSM Mapnik'
+        height: 400
+        auto_center: 1
+        map_position:
+          force: false
+          center:
+            lat: 58.0
+            lon: -95.0
+          zoomControlPosition: topleft
+          zoom: 3
+          minZoom: 1
+          maxZoom: 18
+          zoomFiner: 0
+        scroll_zoom_enabled: 1
+      input:
+        show: true
+        readonly: false
+      toolbar:
+        position: topright
+        marker: defaultMarker
+        drawPolyline: true
+        drawRectangle: true
+        drawPolygon: true
+        drawCircle: false
+        drawText: false
+        editMode: true
+        dragMode: true
+        cutPolygon: false
+        removalMode: true
+        rotateMode: false
+      reset_map:
+        control: false
+        options: '{"position":"topleft","title":"Reset View"}'
+      map_scale:
+        control: true
+        options: '{"position":"bottomright","maxWidth":100,"metric":true,"imperial":false,"updateWhenIdle":false}'
+      fullscreen:
+        control: false
+        options: '{"position":"topleft","pseudoFullscreen":false}'
+      path: '{"color":"#3388ff","opacity":"1.0","stroke":true,"weight":3,"fill":"depends","fillColor":"*","fillOpacity":"0.2","radius":"6"}'
+      locate:
+        control: false
+        options: '{"position":"topright","setView":"untilPanOrZoom","returnToPrevBounds":true,"keepCurrentZoomLevel":true,"strings":{"title":"Locate my position"}}'
+        automatic: true
+      geocoder:
+        control: false
+        settings:
+          position: topright
+          input_size: 20
+          providers: {  }
+          min_terms: 4
+          delay: 800
+          zoom: 16
+          popup: false
+          options: ''
+      geometry_validation: 0
+      feature_properties:
+        values: ''
+    third_party_settings: {  }
+  field_other_record_source_type:
+    type: string_textfield
+    weight: 11
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_photos:
+    type: image_image
+    weight: 15
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_record_publication_date:
+    type: datetime_datelist
+    weight: 8
+    region: content
+    settings:
+      increment: 15
+      date_order: YMD
+      time_type: '24'
+    third_party_settings: {  }
+  field_record_source_tyoe:
+    type: options_select
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_record_type:
+    type: options_select
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_rel_transcript_portion:
+    type: string_textfield
+    weight: 7
+    region: content
+    settings:
+      size: 100
+      placeholder: 'Describe portion of transcript relevant to this memory'
+    third_party_settings: {  }
+  field_rel_video_segment:
+    type: string_textfield
+    weight: 9
+    region: content
+    settings:
+      size: 100
+      placeholder: 'Describe segment of video relevant to this memory'
+    third_party_settings: {  }
+  field_school:
+    type: entity_reference_autocomplete
+    weight: 19
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_source_name:
+    type: string_textfield
+    weight: 12
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_summary_keywords:
+    type: entity_reference_autocomplete
+    weight: 13
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_survivor:
+    type: entity_reference_autocomplete
+    weight: 20
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_video:
+    type: video_upload
+    weight: 16
+    region: content
+    settings:
+      progress_indicator: throbber
+      file_directory: 'video-thumbnails/[date:custom:Y]-[date:custom:m]'
+      file_extensions: 'mp4 webm'
+      max_filesize: '200 MB'
+      uri_scheme: private
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 120
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 2
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  promote: true
+  sticky: true

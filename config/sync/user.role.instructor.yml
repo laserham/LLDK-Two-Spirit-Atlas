@@ -1,0 +1,141 @@
+uuid: e1f1e905-7b59-4d68-a492-92c96a3ce556
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.restricted_html
+    - node.type.about_contributor
+    - node.type.article
+    - node.type.grouped_narrative_area
+    - node.type.non_school_based_memory
+    - node.type.page
+    - node.type.school
+    - node.type.school_based_memory
+    - node.type.survivor
+    - taxonomy.vocabulary.record_source_type
+    - taxonomy.vocabulary.record_type
+  module:
+    - administerusersbyrole
+    - comment
+    - contact
+    - file
+    - filter
+    - help
+    - node
+    - publishcontent
+    - system
+    - taxonomy
+    - view_unpublished
+id: instructor
+label: Instructor
+weight: -8
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access files overview'
+  - 'access help pages'
+  - 'access user contact forms'
+  - 'access user profiles'
+  - 'access users overview'
+  - 'administer comments'
+  - 'administer taxonomy'
+  - 'cancel users by role'
+  - 'change own username'
+  - 'create article content'
+  - 'create grouped_narrative_area content'
+  - 'create page content'
+  - 'create school content'
+  - 'create survivor content'
+  - 'create terms in record_source_type'
+  - 'create terms in record_type'
+  - 'create users'
+  - 'delete any about_contributor content'
+  - 'delete any article content'
+  - 'delete any grouped_narrative_area content'
+  - 'delete any non_school_based_memory content'
+  - 'delete any page content'
+  - 'delete any school content'
+  - 'delete any school_based_memory content'
+  - 'delete any survivor content'
+  - 'delete article revisions'
+  - 'delete grouped_narrative_area revisions'
+  - 'delete own article content'
+  - 'delete own files'
+  - 'delete own grouped_narrative_area content'
+  - 'delete own page content'
+  - 'delete own school content'
+  - 'delete own survivor content'
+  - 'delete page revisions'
+  - 'delete school revisions'
+  - 'delete survivor revisions'
+  - 'edit any about_contributor content'
+  - 'edit any article content'
+  - 'edit any grouped_narrative_area content'
+  - 'edit any non_school_based_memory content'
+  - 'edit any page content'
+  - 'edit any school content'
+  - 'edit any school_based_memory content'
+  - 'edit any survivor content'
+  - 'edit own comments'
+  - 'edit own grouped_narrative_area content'
+  - 'edit own school content'
+  - 'edit own survivor content'
+  - 'edit terms in record_source_type'
+  - 'edit terms in record_type'
+  - 'edit users by role'
+  - 'publish any content'
+  - 'publish any node type about_contributor'
+  - 'publish any node type non_school_based_memory'
+  - 'publish any node type school'
+  - 'publish any node type school_based_memory'
+  - 'publish any node type survivor'
+  - 'publish editable content'
+  - 'publish editable node type article'
+  - 'publish editable node type non_school_based_memory'
+  - 'publish editable node type page'
+  - 'publish editable node type school'
+  - 'publish editable node type survivor'
+  - 'publish own node type article'
+  - 'publish own node type page'
+  - 'revert article revisions'
+  - 'revert grouped_narrative_area revisions'
+  - 'revert page revisions'
+  - 'revert school revisions'
+  - 'revert survivor revisions'
+  - 'role-assign users by role'
+  - 'unpublish any content'
+  - 'unpublish any node type about_contributor'
+  - 'unpublish any node type article'
+  - 'unpublish any node type non_school_based_memory'
+  - 'unpublish any node type page'
+  - 'unpublish any node type school'
+  - 'unpublish any node type school_based_memory'
+  - 'unpublish any node type survivor'
+  - 'unpublish editable content'
+  - 'unpublish editable node type about_contributor'
+  - 'unpublish editable node type article'
+  - 'unpublish editable node type page'
+  - 'unpublish editable node type school'
+  - 'unpublish editable node type survivor'
+  - 'unpublish own node type article'
+  - 'unpublish own node type page'
+  - 'unpublish own node type school'
+  - 'unpublish own node type survivor'
+  - 'use text format basic_html'
+  - 'use text format restricted_html'
+  - 'view any unpublished about_contributor content'
+  - 'view any unpublished article content'
+  - 'view any unpublished content'
+  - 'view any unpublished grouped_narrative_area content'
+  - 'view any unpublished non_school_based_memory content'
+  - 'view any unpublished page content'
+  - 'view any unpublished school content'
+  - 'view any unpublished school_based_memory content'
+  - 'view any unpublished survivor content'
+  - 'view article revisions'
+  - 'view grouped_narrative_area revisions'
+  - 'view page revisions'
+  - 'view school revisions'
+  - 'view survivor revisions'
+  - 'view users by role'

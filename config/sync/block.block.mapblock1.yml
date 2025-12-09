@@ -1,0 +1,31 @@
+uuid: b48dd6a9-aa65-4697-87f6-94f3f6edd9da
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4cbfc756-912b-46fe-94a7-3f2b37c8da99'
+  module:
+    - block_content
+    - system
+  theme:
+    - mappy
+id: mapblock1
+theme: mappy
+region: hero
+weight: -8
+provider: null
+plugin: 'block_content:4cbfc756-912b-46fe-94a7-3f2b37c8da99'
+settings:
+  id: 'block_content:4cbfc756-912b-46fe-94a7-3f2b37c8da99'
+  label: 'Map block 1'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '<front>'

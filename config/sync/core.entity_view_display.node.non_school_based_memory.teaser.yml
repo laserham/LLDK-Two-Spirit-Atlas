@@ -1,0 +1,62 @@
+uuid: 8dc1e2cd-8bca-4737-9a98-5d38e29dffad
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.non_school_based_memory.body
+    - field.field.node.non_school_based_memory.comment
+    - field.field.node.non_school_based_memory.field_audio
+    - field.field.node.non_school_based_memory.field_files
+    - field.field.node.non_school_based_memory.field_location
+    - field.field.node.non_school_based_memory.field_other_record_source_type
+    - field.field.node.non_school_based_memory.field_photos
+    - field.field.node.non_school_based_memory.field_record_publication_date
+    - field.field.node.non_school_based_memory.field_record_source_tyoe
+    - field.field.node.non_school_based_memory.field_record_type
+    - field.field.node.non_school_based_memory.field_rel_transcript_portion
+    - field.field.node.non_school_based_memory.field_rel_video_segment
+    - field.field.node.non_school_based_memory.field_school
+    - field.field.node.non_school_based_memory.field_source_name
+    - field.field.node.non_school_based_memory.field_summary_keywords
+    - field.field.node.non_school_based_memory.field_survivor
+    - field.field.node.non_school_based_memory.field_video
+    - node.type.non_school_based_memory
+  module:
+    - text
+    - user
+id: node.non_school_based_memory.teaser
+targetEntityType: node
+bundle: non_school_based_memory
+mode: teaser
+content:
+  body:
+    type: text_trimmed
+    label: hidden
+    settings:
+      trim_length: 200
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  comment: true
+  field_audio: true
+  field_files: true
+  field_location: true
+  field_other_record_source_type: true
+  field_photos: true
+  field_record_publication_date: true
+  field_record_source_tyoe: true
+  field_record_type: true
+  field_rel_transcript_portion: true
+  field_rel_video_segment: true
+  field_school: true
+  field_source_name: true
+  field_summary_keywords: true
+  field_survivor: true
+  field_video: true

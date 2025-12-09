@@ -1,0 +1,23 @@
+uuid: 5f1560ed-32f8-488e-a3ae-62dd2b14ca51
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.school_based_memory
+  module:
+    - text
+id: node.school_based_memory.body
+field_name: body
+entity_type: node
+bundle: school_based_memory
+label: 'Chapter Section'
+description: 'Each section corresponds to a unique segment of the story journey.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

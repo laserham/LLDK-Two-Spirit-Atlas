@@ -1,0 +1,9 @@
+uuid: 429f2e9f-9f7b-4346-9e75-aae4077d3f04
+langcode: en
+status: true
+dependencies: {  }
+name: 'Record Source Type'
+vid: record_source_type
+description: 'Where record is sourced from'
+weight: 0
+new_revision: false

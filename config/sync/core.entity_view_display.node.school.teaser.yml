@@ -1,0 +1,30 @@
+uuid: 8e1d8d95-eb1d-483c-a454-f173d3ec9b93
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.school.field_location
+    - field.field.node.school.field_photos
+    - field.field.node.school.field_record
+    - field.field.node.school.field_setting_related_details
+    - field.field.node.school.field_survivor
+    - node.type.school
+  module:
+    - user
+id: node.school.teaser
+targetEntityType: node
+bundle: school
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_location: true
+  field_photos: true
+  field_record: true
+  field_setting_related_details: true
+  field_survivor: true

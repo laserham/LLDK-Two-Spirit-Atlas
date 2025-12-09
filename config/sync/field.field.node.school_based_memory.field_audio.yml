@@ -1,0 +1,27 @@
+uuid: 5889e563-f258-4791-9718-4912470497f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_audio
+    - node.type.school_based_memory
+  module:
+    - file
+id: node.school_based_memory.field_audio
+field_name: field_audio
+entity_type: node
+bundle: school_based_memory
+label: Audio
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'mp3 aac'
+  max_filesize: 100MB
+  description_field: true
+field_type: file

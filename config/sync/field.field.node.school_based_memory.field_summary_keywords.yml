@@ -1,0 +1,29 @@
+uuid: 62e3997e-11a2-4cd8-83f7-6dc951fd11fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_summary_keywords
+    - node.type.school_based_memory
+    - taxonomy.vocabulary.tags
+id: node.school_based_memory.field_summary_keywords
+field_name: field_summary_keywords
+entity_type: node
+bundle: school_based_memory
+label: Keyword(s)
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
