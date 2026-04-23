@@ -1,0 +1,68 @@
+/* =========================
+   Global Typography
+========================= */
+
+:root {
+  --font-sans: Arial, Helvetica, sans-serif;
+  --font-serif: Arial, Helvetica, sans-serif;
+  --font-mono: Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* =========================
+   Leaflet Map Styling
+========================= */
+
+.leaflet-container,
+.leaflet-popup,
+.leaflet-popup * {
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 12px;
+  padding: 8px 10px;
+}
+
+.leaflet-popup-content {
+  margin: 8px 10px;
+  max-width: 320px;
+  line-height: 1.35;
+  font-size: 14px;
+}
+
+.leaflet-popup-tip {
+  box-shadow: none;
+}
+
+.leaflet-popup-close-button {
+  font-size: 18px;
+  padding: 6px 8px;
+}
+
+.leaflet-tooltip {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 13px;
+  padding: 4px 6px;
+  border-radius: 8px;
+}
+/* =========================
+   Atlas Intro Section
+========================= */
+
+.atlas-intro {
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+.atlas-intro h2 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.atlas-intro strong {
+  font-weight: 700;
+}
